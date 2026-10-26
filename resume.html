@@ -1,0 +1,139 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Resume · Sadati Fred Mwasongwe</title>
+  <meta name="description" content="Web resume of Sadati Fred Mwasongwe, biomedical engineer with commercial operations and automation experience." />
+  <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&family=Marcellus&display=swap" rel="stylesheet" />
+  <script>
+    (function () {
+      var t = null;
+      try { t = localStorage.getItem("sfm-theme"); } catch (e) {}
+      if (t !== "light" && t !== "dark") t = matchMedia("(prefers-color-scheme: light)").matches ? "light" : "dark";
+      document.documentElement.setAttribute("data-theme", t);
+    })();
+  </script>
+  <style>
+    /* The web resume is deliberately separate from the downloadable PDF.
+       Content comes from data.js; this page only controls layout. */
+    :root { --bg: #0D1A2F; --ink: #1D1E21; --ink-2: #4a5570; --line: #dfe4ee; --accent: #2458B4; --paper: #fdfdfe; --bar: rgba(20, 28, 44, .7); --bar-ink: #e9eef7; --bar-line: rgba(150, 185, 255, .16); }
+    [data-theme="light"] { --bg: #F3F2EE; --bar: rgba(255, 255, 255, .75); --bar-ink: #121a2b; --bar-line: rgba(40, 62, 120, .14); }
+    * { box-sizing: border-box; }
+    body { margin: 0; background: radial-gradient(90% 60% at 50% 0%, color-mix(in srgb, var(--accent) 22%, var(--bg)), var(--bg) 60%) fixed; font: 15px/1.55 "IBM Plex Sans", system-ui, sans-serif; color: var(--ink); -webkit-font-smoothing: antialiased; }
+    a { color: inherit; }
+    .bar { position: sticky; top: 0; z-index: 2; display: flex; gap: 10px; justify-content: center; flex-wrap: wrap; padding: 12px 16px; background: var(--bar); backdrop-filter: blur(16px); -webkit-backdrop-filter: blur(16px); border-bottom: 1px solid var(--bar-line); }
+    .bar a, .bar button { display: inline-flex; align-items: center; gap: 8px; height: 38px; padding: 0 14px; border-radius: 11px; border: 1px solid var(--bar-line); background: transparent; color: var(--bar-ink); font: 500 13.5px "IBM Plex Sans", system-ui, sans-serif; text-decoration: none; cursor: pointer; }
+    .bar .primary { background: linear-gradient(110deg, #2f6af0, #5b4ff0); border-color: transparent; color: #fff; }
+    .bar a:focus-visible, .bar button:focus-visible { outline: 2px solid #46dcf5; outline-offset: 2px; }
+    .page { max-width: 860px; margin: 32px auto 64px; padding: 56px 60px; background: var(--paper); border-radius: 14px; box-shadow: 0 30px 80px -30px rgba(0, 0, 0, .55); }
+    header { border-bottom: 2px solid var(--ink); padding-bottom: 18px; }
+    h1 { font: 400 32px/1.1 "Marcellus", Georgia, serif; margin: 0; }
+    .role { margin: 6px 0 10px; font-weight: 500; color: var(--accent); }
+    .contact { display: flex; flex-wrap: wrap; gap: 4px 16px; font: 12.5px "IBM Plex Mono", monospace; color: var(--ink-2); }
+    .contact a { text-decoration: none; }
+    h2 { font: 600 12px "IBM Plex Mono", monospace; letter-spacing: .16em; text-transform: uppercase; color: var(--accent); margin: 28px 0 12px; display: flex; align-items: center; gap: 12px; }
+    h2::after { content: ""; flex: 1; height: 1px; background: var(--line); }
+    .item + .item { margin-top: 16px; }
+    .row { display: flex; justify-content: space-between; gap: 12px; flex-wrap: wrap; }
+    .row b { font-family: "IBM Plex Sans", system-ui, sans-serif; font-weight: 600; }
+    .row .dates { font: 12.5px "IBM Plex Mono", monospace; color: var(--ink-2); white-space: nowrap; }
+    .sub { color: var(--ink-2); font-size: 14px; }
+    ul { margin: 8px 0 0; padding-left: 18px; }
+    li { margin: 3px 0; }
+    .skills { display: grid; grid-template-columns: 210px 1fr; gap: 6px 16px; font-size: 14px; }
+    .skills dt { font-weight: 600; }
+    .skills dd { margin: 0; color: var(--ink-2); }
+    .note { margin-top: 30px; font: 11.5px "IBM Plex Mono", monospace; color: var(--ink-2); text-align: center; }
+    @media (max-width: 720px) {
+      .page { margin: 16px; padding: 28px 22px; }
+      .skills { grid-template-columns: 1fr; }
+      .skills dd { margin-bottom: 8px; }
+    }
+    @media print {
+      @page { margin: 14mm; }
+      body { background: #fff; font-size: 10pt; line-height: 1.45; }
+      .skills { grid-template-columns: 170px 1fr; font-size: 9.5pt; break-inside: avoid; }
+      .skills dd { margin-bottom: 0; }
+      h2 { margin: 18px 0 8px; }
+      .item + .item { margin-top: 10px; }
+      .bar, .note { display: none; }
+      .page { margin: 0; padding: 0; box-shadow: none; max-width: none; border-radius: 0; }
+      li, .row, .sub { break-inside: avoid; }
+      .row { break-after: avoid; }
+      h2 { break-after: avoid; }
+      .pb { break-before: page; }
+      .skills dt { break-after: avoid; }
+      a { text-decoration: none; }
+    }
+  </style>
+</head>
+<body>
+  <nav class="bar" aria-label="Resume actions">
+    <a href="index.html#documents">← Back to portfolio</a>
+    <button type="button" onclick="window.print()">Print / Save as PDF</button>
+    <a class="primary" id="pdf-link" href="resume.pdf" download>Download original PDF</a>
+  </nav>
+  <main class="page" id="resume">
+    <noscript><p>This page needs JavaScript. You can <a href="resume.pdf">download the PDF</a> instead.</p></noscript>
+  </main>
+
+  <script src="data.js"></script>
+  <script>
+    (function () {
+      var D = window.PORTFOLIO;
+      if (!D) return;
+      var esc = function (v) { return String(v == null ? "" : v).replace(/[&<>"']/g, function (c) { return { "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]; }); };
+      var p = D.profile, c = D.contact;
+      var social = D.social.filter(function (s) { return s.url && s.icon !== "mail"; })
+        .map(function (s) { return '<a href="' + esc(s.url) + '">' + esc(s.url.replace(/^https?:\/\/(www\.)?/, "")) + "</a>"; });
+      var contact = [esc(c.location), '<a href="mailto:' + esc(c.email) + '">' + esc(c.email) + "</a>"].concat(social);
+      if (c.phone && c.phone.show) contact.push(esc(c.phone.value));
+
+      var edu = D.education.map(function (e) {
+        return '<div class="item"><div class="row"><b>' + esc(e.degree) + '</b><span class="dates">' + esc(e.dates) + "</span></div>" +
+          '<div class="sub">' + esc(e.school) + " · " + esc(e.location) + "</div><div>" + esc(e.detail) + "</div></div>";
+      }).join("");
+
+      var exp = D.experience.filter(function (x) { return !x.placeholder; }).map(function (x) {
+        return '<div class="item"><div class="row"><b>' + esc(x.title) + '</b><span class="dates">' + esc(x.dates) + "</span></div>" +
+          '<div class="sub">' + esc(x.org) + (x.unit ? " · " + esc(x.unit) : "") + (x.type ? " · " + esc(x.type) : "") + "</div>" +
+          "<ul>" + x.responsibilities.concat(x.achievements || []).map(function (r) { return "<li>" + esc(r) + "</li>"; }).join("") + "</ul></div>";
+      }).join("");
+
+      var skills = D.skills.map(function (g) {
+        return "<dt>" + esc(g.group) + "</dt><dd>" + g.items.map(function (i) { return esc(i.name); }).join(", ") + "</dd>";
+      }).join("");
+
+      var ach = D.certificates.filter(function (x) { return !x.placeholder && !/^Graduation/.test(x.title); }).map(function (x) {
+        return "<li><b>" + esc(x.title) + "</b> — " + esc(x.issuer.indexOf("to be added") > -1 ? x.description : x.issuer) + "</li>";
+      });
+      D.projects.filter(function (x) { return (x.category === "Biomedical Engineering" || x.id === "wifi") && x.id !== "stair-ramp"; }).forEach(function (x) {
+        ach.push("<li><b>" + esc(x.title) + "</b> — " + esc(x.overview.split(". ")[0].replace(/\.$/, "")) + ".</li>");
+      });
+
+      var acts = D.activities.filter(function (a) { return !a.placeholder && (a.type === "Learning" || a.type === "Programs"); }).map(function (a) {
+        return "<li><b>" + esc(a.title) + "</b>" + (a.org ? " (" + esc(a.org) + ")" : "") + " — " + esc(a.text) + "</li>";
+      }).join("");
+
+      document.getElementById("resume").innerHTML =
+        "<header><h1>" + esc(p.name) + '</h1><div class="role">' + esc(p.role) + '</div><div class="contact">' + contact.join("<span>·</span>") + "</div></header>" +
+        "<h2>Profile</h2><p>" + esc(D.resume.summary) + "</p>" +
+        "<h2>Education</h2>" + edu +
+        "<h2>Experience</h2>" + exp +
+        '<h2>Skills</h2><dl class="skills">' + skills + "</dl>" +
+        "<h2>Projects &amp; Achievements</h2><ul>" + ach.join("") + "</ul>" +
+        ((D.websites || []).length ? "<h2>Websites &amp; Tools I Built</h2><p>" + D.websites.filter(function (w) { return w.access !== "soon"; }).map(function (w) { return "<b>" + esc(w.title) + "</b> (" + esc(w.kind.toLowerCase()) + ")"; }).join(" · ") + "</p>" : "") +
+        "<h2>Learning &amp; Activities</h2><ul>" + acts + "</ul>" +
+        ((D.languages || []).length ? "<h2>Languages</h2><p>" + D.languages.map(function (l) { return esc(l.name) + " (" + esc(l.level) + ")"; }).join(" · ") + "</p>" : "") +
+        '<p class="note">Web version generated from the portfolio data · PDF version ' + esc(D.resume.version) + "</p>";
+      var pdf = document.getElementById("pdf-link");
+      pdf.href = D.resume.file;
+      pdf.setAttribute("download", D.resume.fileName);
+    })();
+  </script>
+</body>
+</html>
